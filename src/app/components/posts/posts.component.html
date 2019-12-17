@@ -1,0 +1,11 @@
+<div class="post-conatiner" *ngIf="responseData?.length">
+    <ng-container *ngFor="let item of responseData">
+        <div class="post">
+            <img src='../../../assets/images/{{item.image}}'>
+            <div class="views-container">
+                <p><span class="view"></span>{{item.views}}</p>
+                <p><span class="likes"></span>{{item.likes}}</p>
+            </div>
+        </div>
+    </ng-container>
+</div>

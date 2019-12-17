@@ -1,0 +1,49 @@
+.highlights-container {
+    .highlight-header {
+        margin: 10px 0;
+        font-family: "DINPro Bold";
+    }
+    .search-post-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .hash-tags {
+            background: #ffdf7f;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            p {
+                margin: 0;
+            }
+            .tag-name {
+                font-family: "DINPro Bold";
+                font-size: 15px;
+                text-align: center;
+            }
+            .posts {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+    .feed-container {
+        display: flex;
+        margin: 15px 0;
+        h2 {
+            margin: 0;
+            text-align: center;
+            font-family: "DINPro Bold";
+        }
+        .left-feed-container {
+            margin-right: 30px;
+        }
+        .right-feed-container {
+            margin-left: 30px;
+        }
+        .feed {
+            text-align: center;
+            margin: 0;
+        }
+    }
+}

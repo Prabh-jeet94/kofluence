@@ -1,0 +1,39 @@
+.search-wrapper {
+    display: flex;
+    .tags-input {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d8d8d8;
+        background: #d8d8d8;
+        padding: 5px;
+        border-radius: 0 15px 15px 0;
+    }
+    .tags-input-pills {
+        padding: 4px 10px;
+        display: inline-block;
+        background: #ffdf7f;
+        border-radius: 12px;
+        margin-top: 0;
+        margin-right: 10px;
+    }
+}
+
+.search {
+    outline: none;
+    // height: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d8d8d8;
+    background: #d8d8d8;
+}
+
+.search-icon {
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-radius: 15px 0 0 15px;
+    padding: 4px 10px 4px 20px;
+    width: 30px;
+    height: 30px;
+    background: url("../../../assets/images/baseline_search.png") no-repeat center;
+    background-color: #d8d8d8;
+}

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "DINPro Light";
+    src: url("./assets/fonts/DINPro-Light-tr.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DINPro Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("DINPro Medium"), url("./assets/fonts/DINPro-Medium-tr.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DINPro Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("DINPro Bold"), url("./assets/fonts/DINPro-Bold-tr.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DINPro Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("DINPro Black"), url("./assets/fonts/DINPro-Black-tr.woff") format("woff");
+}
+
+html,
+body {
+    margin: 0;
+    font-family: "DINPro Light";
+}
+
+ul,
+li {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,0 +1,8 @@
+<form #searchForm="ngForm" #myForm="ngForm" (ngSubmit)="onSubmit(searchForm.value, ngForm)">
+    <div class="search-wrapper">
+        <span class="search-icon"></span>
+        <div class="tags-input focus" id="tagsInput">
+            <input type="text" class="search" name="search" value="" autocomplete="off" placeholder="search starts with #" ngModel>
+        </div>
+    </div>
+</form>

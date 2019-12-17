@@ -1,0 +1,22 @@
+.navbar-wrapper {
+    height: 55px;
+    background: black;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    .back-arrow {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background: url("../assets/images/arrow_back.png") no-repeat;
+        background-size: cover;
+    }
+    .live-help {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background: url("../assets/images/live_help.png") no-repeat;
+        background-size: cover;
+    }
+}

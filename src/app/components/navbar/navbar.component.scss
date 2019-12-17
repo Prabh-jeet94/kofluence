@@ -1,0 +1,17 @@
+.navbar-container {
+    .navbar-list {
+        display: flex;
+        justify-content: space-around;
+        .navbar-item {
+            font-size: 20px;
+            padding: 8px 25px;
+            font-family: "DINPro Medium";
+            &:focus {
+                outline: none;
+            }
+            &.active {
+                border-bottom: 2px solid #ffdf7f;
+            }
+        }
+    }
+}
