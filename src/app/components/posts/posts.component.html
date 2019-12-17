@@ -1,4 +1,4 @@
-<div class="post-conatiner" *ngIf="responseData?.length">
+<!-- <div class="post-conatiner" *ngIf="responseData?.length">
     <ng-container *ngFor="let item of responseData">
         <div class="post">
             <img src='../../../assets/images/{{item.image}}'>
@@ -6,6 +6,19 @@
                 <p><span class="view"></span>{{item.views}}</p>
                 <p><span class="likes"></span>{{item.likes}}</p>
             </div>
+        </div>
+    </ng-container>
+</div> -->
+<div class="row" *ngIf="responseData?.length">
+    <ng-container *ngFor="let item of responseData">
+        <div class="col-xs-6 col-md-3 post">
+            <!-- <a href="#" class="thumbnail"> -->
+            <img src='../../../assets/images/{{item.image}}' alt="" class="thumbnail1">
+            <div class="views-container">
+                <p><span class="view"></span>{{item.views}}</p>
+                <p><span class="likes"></span>{{item.likes}}</p>
+            </div>
+            <!-- </a> -->
         </div>
     </ng-container>
 </div>

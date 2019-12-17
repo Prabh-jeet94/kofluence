@@ -1,60 +1,41 @@
-.post-conatiner {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -20px;
-    .post {
-        margin-right: 20px;
-        margin-bottom: 10px;
-        width: 43%;
+.post {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+    .thumbnail1 {
         position: relative;
-        &::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    .views-container {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #ffffff;
+        p {
+            display: flex;
+            align-items: center;
+            margin: 0 0 5px 0;
         }
-        //for tablet
-        @media only screen and (min-width: 600px) {
-            width: 21%;
+        .view {
+            background: url("../../../assets/images/views.png");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 10px;
         }
-        // for desktop
-        @media only screen and (min-width: 768px) {
-            width: 23%;
-        }
-        .views-container {
-            position: absolute;
-            bottom: 5px;
-            left: 10px;
-            color: #ffffff;
-            z-index: 1;
-            p {
-                display: flex;
-                align-items: center;
-                margin: 0 0 5px 0;
-            }
-            .view {
-                background: url("../../../assets/images/views.png");
-                width: 24px;
-                height: 24px;
-                display: inline-block;
-                margin-right: 10px;
-            }
-            .likes {
-                background: url("../../../assets/images/likes.png");
-                width: 24px;
-                height: 24px;
-                display: inline-block;
-                margin-right: 10px;
-            }
-        }
-        img {
-            width: 100%;
-            height: 100%;
+        .likes {
+            background: url("../../../assets/images/likes.png");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 10px;
         }
     }
 }

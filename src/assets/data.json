@@ -31,13 +31,13 @@
         "likes": "24,000",
         "views": "22,000",
         "type": "#flatShoes",
-        "image": "Surface5.png"
+        "image": "Surface.png"
     },
     {
         "category": "#sandals",
         "likes": "28,000",
         "views": "2200",
-        "image": "flatshoes5.jpg"
+        "image": "Surface.png"
     },
     {
         "category": "#sandals",
@@ -65,7 +65,7 @@
         "likes": "22",
         "views": "22",
         "type": "#heels",
-        "image": "Surface5.png"
+        "image": "Surface.png"
     },
     {
         "category": "#sandals",
@@ -79,7 +79,7 @@
         "likes": "22",
         "views": "22",
         "type": "#heels",
-        "image": "Surface5.png"
+        "image": "Surface.png"
     },
     {
         "category": "#sandals",

@@ -7,25 +7,46 @@ import { HttpServiceService } from "../../services/http-service.service";
   styleUrls: ["./highlights.component.scss"]
 })
 export class HighlightsComponent implements OnInit {
-  youMaysearchtags = ["#flatshoes", "#heel", "#redshoes", "#sportshoes"];
+  youMaysearchtags = ["#heels", "#flatshoes", "#redshoes", "#sportshoes"];
   searchMap = {
-    sandals: ["#flatshoes", "#heel"],
+    sandals: ["#heels", "#flatshoes"],
     shoes: ["#redshoes", "#sportshoes"]
   };
   constructor(private http: HttpServiceService) {}
 
   ngOnInit() {
     this.http.$searchedString.subscribe(response => {
-      if (response.length > 1 || !response.length) {
+      console.log(response);
+      var searchKeys = Object.keys(this.searchMap);
+      console.log(searchKeys);
+      if (response.length) {
+        if (response.length > 1) {
+          this.youMaysearchtags = [];
+          searchKeys.forEach((eachItem, index) => {
+            this.youMaysearchtags.push(this.searchMap[eachItem]);
+          });
+          this.youMaysearchtags = [].concat.apply([], this.youMaysearchtags);
+        } else {
+          this.youMaysearchtags = this.searchMap[response[0]];
+        }
+      } else {
         this.youMaysearchtags = [
+          "#heels",
           "#flatshoes",
-          "#heel",
           "#redshoes",
           "#sportshoes"
         ];
-      } else {
-        this.youMaysearchtags = this.searchMap[response[0]];
       }
+      // if (response.length > 1 || !response.length) {
+      //   this.youMaysearchtags = [
+      //     "#flatshoes",
+      //     "#heel",
+      //     "#redshoes",
+      //     "#sportshoes"
+      //   ];
+      // } else {
+      //   this.youMaysearchtags = this.searchMap[response[0]];
+      // }
     });
   }
 }
